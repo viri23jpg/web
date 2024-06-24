@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Compra de Moto</title>
+    <style>
+        /* Estilos opcionales para mejorar la presentación */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type=text], input[type=email], input[type=tel], select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .styled-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50; /* Color de fondo */
+            color: white; /* Color del texto */
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px; 
+            border: none; 
+            transition: background-color 0.3s ease; 
+        }
+
+        .styled-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Formulario de Compra de Moto</h2>
+    <form action="/submit-tu-formulario-aqui" method="post">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="marca">Marca de la moto:</label>
+        <input type="text" id="marca" name="marca" required>
+
+        <label for="modelo">Modelo de la moto:</label>
+        <input type="text" id="modelo" name="modelo" required>
+
+        <label for="color">Color preferido:</label>
+        <input type="text" id="color" name="color" required>
+
+        <label for="precio">Presupuesto:</label>
+        <input type="text" id="precio" name="precio" required>
+
+        <label for="metodo_pago">Método de pago preferido:</label>
+        <select id="metodo_pago" name="metodo_pago" required>
+            <option value="efectivo">Efectivo</option>
+            <option value="tarjeta">Tarjeta de crédito/débito</option>
+            <option value="financiamiento">Financiamiento</option>
+        </select>
+<div class="styled-button"
+button type="button"><a class="btn btn-primary" href="submit.html" role="button">Enviar</a></button></div>
+      </div>
+  </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+<link rel="Icon" href="logo.jpg">
+
+
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="logo2.jpeg" alt="Bootstrap" width="100" height="100"></a>
+        <H1><center>PROMOCIONES</center></H1>
+        <p class="d-inline-flex gap-1">
+            <center>
+      
+    </div>
+  </nav>
+
+
+      <div class="navbar">
+        <div class="logo">Libre Sobre Ruedas</div>
+        <div class="menu">
+            <a href=".html ">Inicio</a>
+            <a href="#nosotros">Promociones</a>
+            <a href="Servicio.html">Servicios</a>
+            <a href="contactanos.html">Contacto</a>
+            <a href="compra.html">Carrito</a>
+        </div>
+    </div>
+    
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+         <h1> ktm-390-duke</h1><p>Descuento</p>   <img src="ktm-390-duke.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <h1>RS 600</h1><img src="RS 600.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <h1>RSV4 </h1><img src="RSV4.webp" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <h1>Ducati 1299</h1><img src="Ducati 1299.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <h1>Ducati Multistrada</h1><img src="Ducati Multistrada.png" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    <script>
+        let slideIndex = 0;
+        showSlides();
+    
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            const dots = document.getElementsByClassName("dot");
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+            if (slideIndex < 0) {
+                slideIndex = slides.length - 1;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex].style.display = "block";
+            dots[slideIndex].className += " active";
+            slideIndex++;
+            setTimeout(showSlides, 2000); // Cambia la imagen cada 2 segundos
+        }
+    </script>
+    
+    
+   
+      <style>
+body{
+
+  font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color:  rgb(27, 27, 29);
+            padding: 10px 20px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .navbar .logo {
+          font-size: 24px;
+          font-weight: bold;
+      }
+        .navbar .menu {
+            display: flex;
+        }
+
+        body{
+          font-family:  'Black Ops One', cursive;;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+        }
+        .container {
+             display: flex;
+             align-items: center;
+             margin-bottom: 20px;
+         }
+         .container img {
+             margin-right: 20px;
+         }
+         .content {
+             max-width: 600px;
+         }
+         .title {
+             font-size: 1.5em;
+             font-weight: bold;
+         }
+         .text {
+             font-size: 1em;
+         }
+
+         .file-input-wrapper {
+           position: relative;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+       
+        .contenido {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color:  rgb(27, 27, 29);
+            color: #fff;
+            padding: 20px 0;
+        }
+        .footer-contenido {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .footer-seccion {
+            margin: 10px;
+        }
+        .footer-seccion h3 {
+            border-bottom: 2px solid #fff;
+            padding-bottom: 5px;
+        }
+        .footer-seccion ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-seccion ul li {
+            margin: 5px 0;
+        }
+        .footer-seccion ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer-seccion ul li a:hover {
+            text-decoration: underline;
+        }
+        .footer-credito {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-logos {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .social-logos a img {
+            margin: 0 10px;
+        }
+        .slideshow-container {
+        max-width: 900px;
+        position: relative;
+        margin: auto;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    .mySlides img {
+        width: 100%;
+        height: auto;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+    .contenido {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color:  rgb(27, 27, 29);
+            color: #fff;
+            padding: 20px 0;
+        }
+        .footer-contenido {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .footer-seccion {
+            margin: 10px;
+        }
+        .footer-seccion h3 {
+            border-bottom: 2px solid #fff;
+            padding-bottom: 5px;
+        }
+        .footer-seccion ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-seccion ul li {
+            margin: 5px 0;
+        }
+        .footer-seccion ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer-seccion ul li a:hover {
+            text-decoration: underline;
+        }
+        .footer-credito {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-logos {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .social-logos a img {
+            margin: 0 10px;
+        }
+      
+     </style>
+ </head>
+ <body><br>
+    <!-- Contenido principal de la página -->
+    <div class="contenido">
+        <h1>Bienvenido a Mi Página Web</h1>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-seccion">
+                <h3>Sobre Nosotros</h3>
+                <p>Información sobre la empresa.</p>
+            </div>
+            <div class="footer-seccion">
+                <h3>Enlaces Útiles</h3>
+                <ul>
+                    <li><a href=".html ">Inicio</a></li>
+                    <li><a href="Servicio.html">Servicios</a></li>
+                    <li><a href="contactanos.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-seccion">
+                <h3>Contáctanos</h3>
+                <p>Email: info@ejemplo.com</p>
+                <p>Teléfono: +34 123 456 789</p>
+            </div>
+          
+            </div>
+        </div>
+        <div class="footer-credito">
+            <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Estilos en línea para el ejemplo -->
